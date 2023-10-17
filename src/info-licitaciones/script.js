@@ -8,7 +8,7 @@ const infoDescripcion = document.getElementById('info-descripcion');
 function cargarContenido() {
   async function cargarDetalleLicitacion(licitacionId) {
       try {
-          const response = await fetch('../licitaciones/info-licitaciones.json'); 
+          const response = await fetch('https://apimocha.com/licitaciones-banco/data/1'); 
           const licitaciones = await response.json();
           
           const detalleLicitacion = licitaciones.find(licitacion => licitacion.numero === licitacionId);
