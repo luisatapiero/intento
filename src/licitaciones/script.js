@@ -4,7 +4,7 @@ const botonesContainer = document.getElementById('botones-container');
 
 async function cargarLicitaciones() {
   try {
-    const response = await fetch('./info-licitaciones.json'); 
+    const response = await fetch('info-licitaciones.json'); 
     const licitaciones = await response.json();
     return licitaciones;
   } catch (error) {
