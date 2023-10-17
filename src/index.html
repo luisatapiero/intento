@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banco W</title>
+
+  <!--Scss-->
+  <link rel="stylesheet" href="./style.scss">
+  <link rel="stylesheet" href="./components/navbar/style.scss">
+
+  <link rel="stylesheet" href="./components/botón-ayuda/style.scss">
+  <link rel="stylesheet" href="./components/botón-inclusivo/style.scss">
+  <link rel="stylesheet" href="./components/footer/style.scss">
+  <link rel="stylesheet" href="./components/nav-bar-float/style.scss">
+
+
+</head>
+
+<body>
+  <nav-bar-desktop></nav-bar-desktop>
+
+  <section id="main-banner">
+    <img src="/images/woman-main-banner-landing.webp" alt="ícono ir a la página" class="woman-img">
+    <div class="banner-container">
+      <div class="container-text">
+        <p class="title">¡Solicita tu crédito aquí!</p>
+        <p class="text vo_desk">Financia tus proyectos con nuestra opción de crédito a medida. ¡Avanza hacia tus metas
+          financieras!</p>
+        <p class="text vo_mobile">de libre inversión y paga con tu salario</p>
+      </div>
+      <a href="" class="btn">¡Conoce más!</a>
+    </div>
+  </section>
+
+
+  <nav id="nav-bar-float">
+    <button class="option_credit" id="credit-btn">
+      <img class="icon" src="/icons/credit-purple.svg" alt="Crédito inmediato">
+      <a href="/credito-inmediato/">Crédito inmediato</a>
+    </button>
+    <button class="option_blog">
+      <img class="icon" src="/icons/blog-purple.svg" alt="Blog">
+      <a href="">Blog</a>
+    </button>
+    <button class="option_comparator" id="comparator-btn">
+      <img class="icon" src="/icons/comparator-purple.svg" alt="Blog">
+      <a href="/comparator/">Comparador financiero</a>
+    </button>
+    <button class="option_simulator" id="simulator-btn">
+      <img class="icon" src="/icons/calculator-purple.svg" alt="Simulador financiero">
+      <a href="/simuladores/">Simulador financiero</a>
+    </button>
+  </nav>
+
+  <section id="products-landing">
+    <div class="titles-section">
+      <h1 class="title-25">Hola, Jessica</h1>
+      <h3>Productos</h3>
+    </div>
+    <div class="container-products">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-products dropdown-toggle" type="button" id="dropdownMenuButton"
+          data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Ahorro
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="dropdown-options">
+          <li><a class="dropdown-item" href="#opcion1-info" data-value="opcion1">Ahorro</a></li>
+          <li><a class="dropdown-item" href="#opcion2-info" data-value="opcion2">Crédito</a></li>
+          <li><a class="dropdown-item" href="#opcion3-info" data-value="opcion3">Inversión</a></li>
+          <li><a class="dropdown-item" href="#opcion4-info" data-value="opcion4">Canales</a></li>
+          <li><a class="dropdown-item" href="#opcion5-info" data-value="opcion5">Giros</a></li>
+        </ul>
+      </div>
+
+      <div id="info-container" class="mt-4">
+        <div id="opcion1-info" class="opcion-info" style="display: block;">
+          <div class="info-product">
+            <div class="info-product_text">
+              <p class="body2">Para ti que eres una persona que encuentra en el ahorro una forma de cumplir tus sueños,
+                tenemos la rentabilidad y la seguridad que necesitas para que puedas lograrlo.</p>
+              <article class="description-product">
+                <ul class="description-product_text">
+                  <li class="body2"><img src="/icons/item.svg" alt="ícono" class="asterisks-mobile">Puedes abrir el
+                    depósito de
+                    bajo monto sin
+                    acercarte a una oficina en pocos minutos.</li>
+                  <li class="body2"><img src="/icons/item.svg" alt="ícono" class="asterisks-mobile">Puedes mantener un
+                    saldo
+                    mensual disponible
+                    máximo de ocho (8) SMMLV.</li>
+                  <li class="body2"><img src="/icons/item.svg" alt="ícono" class="asterisks-mobile">Puedes retirar en el
+                    mes hasta
+                    ocho (8) SMMLV.
+                  </li>
+                </ul>
+              </article>
+              <a href="" class="btn-desk">Conoce más</a>
+            </div>
+            <img src="/images/woman-pig-landing.webp" alt="mujer con alcancía de cerdito" class="image-ref-product">
+          </div>
+        </div>
+        <div id="opcion2-info" class="opcion-info" style="display: none;">
+          <div class="info-product">
+            <div class="info-product_text">
+              <p class="body2">Creemos en las personas como tú, que se encuentra en un nuevo momento de su vida y que
+                están buscando emprender sus proyectos</p>
+              <article class="description-product">
+                <ul class="description-product_text">
+                  <li class="body2"><img src="/icons/item.svg" alt="ícono">Contamos con diferentes tipos de créditos que
+                    pueden adaptarse a tí y a tus necesidades.</li>
+                  <li class="body2"><img src="/icons/item.svg" alt="ícono">Nuestros asesores siempre estarán ahí para
+                    brindarte una ayuda especializada.</li>
+                  <li class="body2"><img src="/icons/item.svg" alt="ícono">Tienes la oportunidad de ahorrar mientras
+                    pagas el crédito</li>
+                </ul>
+              </article>
+              <a href="" class="btn-desk">Conoce más</a>
+            </div>
+            <img src="/images/woman-pig-landing.webp" alt="mujer con alcancía de cerdito" class="image-ref-product">
+          </div>
+        </div>
+        <div id="opcion3-info" class="opcion-info" style="display: none;">
+          <div class="info-product">
+            <div class="info-product_text">
+              <p class="body2">Gorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                molestie, dictum
+                est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin
+                lacus.</p>
+              <article class="description-product">
+                <ul class="description-product_text">
+                  <li class="body2"><img src="/icons/item.svg" alt="ícono">Puedes abrir el depósito de
+                    bajo monto sin
+                    acercarte a una oficina en pocos minutos.</li>
+                  <li class="body2"><img src="/icons/item.svg" alt="ícono">Puedes mantener un saldo
+                    mensual disponible
+                    máximo de ocho (8) SMMLV.</li>
+                  <li class="body2"><img src="/icons/item.svg" alt="ícono">Puedes retirar en el mes hasta
+                    ocho (8) SMMLV.
+                  </li>
+                </ul>
+              </article>
+              <a href="" class="btn-desk">Conoce más</a>
+            </div>
+            <img src="/images/woman-pig-landing.webp" alt="mujer con alcancía de cerdito" class="image-ref-product">
+          </div>
+        </div>
+        <div id="opcion4-info" class="opcion-info" style="display: none;">
+          <div class="info-product">
+            <div class="info-product_text">
+              <p class="body2"> La accesibilidad y cercanía con nuestros clientes son fundamentales cuando se trata de
+                gestionar sus
+                finanzas. En Banco W entendemos la importancia de estar siempre al alcance de todos.</p>
+              <article class="description-product">
+                <ul class="description-product_text">
+                  <li class="body2"><img src="/icons/item.svg" alt="ícono">Comtamos con múltiples opciones para que
+                    puedas contactarnos.</li>
+                  <li class="body2"><img src="/icons/item.svg" alt="ícono">Puedes gestionar una petición, queja, reclamo
+                    o sugerencia</li>
+                </ul>
+              </article>
+              <a href="" class="btn-desk">Conoce más</a>
+            </div>
+            <img src="/images/woman-pig-landing.webp" alt="mujer con alcancía de cerdito" class="image-ref-product">
+          </div>
+        </div>
+        <div id="opcion5-info" class="opcion-info" style="display: none;">
+          <div class="info-product">
+            <div class="info-product_text">
+              <p class="body2">La distancia no existe cuando nos une el amor. Por ello, te ayudamos a recibir o enviar
+                tu dinero
+                en cualquier parte del mundo.
+              </p>
+              <article class="description-product">
+                <ul class="description-product_text">
+                  <li class="body2"><img src="/icons/item.svg" alt="ícono">Nuestros giros son 100% confiables</li>
+                  <li class="body2"><img src="/icons/item.svg" alt="ícono">Puedes elegir la manera de recibir tus giros
+                  </li>
+                  <li class="body2"><img src="/icons/item.svg" alt="ícono">Recibe y envía dinero a más de 190 países
+                  </li>
+                  <li class="body2"><img src="/icons/item.svg" alt="ícono">Para reclamar tu giro sólo necesitas tu
+                    cédula original y el número de referencia del giro (Código o PIN de transacción).</li>
+                </ul>
+              </article>
+              <a href="" class="btn-desk">Conoce más</a>
+            </div>
+            <img src="/images/woman-pig-landing.webp" alt="mujer con alcancía de cerdito" class="image-ref-product">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="bank-practices">
+    <h3>Descubre nuestras <br> prácticas bancarias</h3>
+    <div class="titles">
+      <h4>Explora nuestras novedades</h4>
+      <h4>Lo más buscado</h4>
+    </div>
+    <div class="cards_all">
+      <article class="our-app">
+        <div class="container-info">
+          <div class="container-text">
+            <h1 class="title-25">Nuestra app</h1>
+            <p class="body2">Administra tus finanzas en cualquier momento o lugar.</p>
+          </div>
+          <a href="" class="btn">Acerca de la app</a>
+        </div>
+      </article>
+      <div class="cards_favorites">
+        <article class="card-favorite">
+          <div class="orange">
+            <div class="container-text">
+              <h2>Giros</h2>
+              <p class="body2">Envía y Recibe Dinero de forma Rápida y Segura.</p>
+            </div>
+            <img src="/icons/chevron-right.svg" alt="ícono ir a la página">
+          </div>
+        </article>
+        <article class="card-favorite">
+          <div class="violet">
+            <div class="container-text">
+              <h2>Canales</h2>
+              <p class="body2">Accede a nuestros servicios bancarios de manera.</p>
+            </div>
+            <img src="/icons/chevron-right.svg" alt="ícono ir a la página">
+          </div>
+        </article>
+        <article class="card-favorite">
+          <div class="blue">
+            <div class="container-text">
+              <h2>Créditos</h2>
+              <p class="body2">Encuentra la Financiación que Necesitas para Crecer.</p>
+            </div>
+            <img src="/icons/chevron-right.svg" alt="ícono ir a la página">
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="explore-news">
+    <h3>Explora nuestras novedades</h3>
+    <article class="our-app">
+      <div class="container-info">
+        <div class="container-text">
+          <h1 class="title-25">Nuestra app</h1>
+          <p class="body2">Administra tus finanzas en cualquier momento o lugar.</p>
+        </div>
+        <a href="" class="btn">Acerca de la app</a>
+      </div>
+    </article>
+  </section>
+
+  <section id="favorites">
+    <h3>Lo más buscado</h3>
+    <article class="card-favorite">
+      <div class="orange">
+        <div class="container-text">
+          <h2>Giros</h2>
+          <p class="body2">Envía y Recibe Dinero de forma Rápida y Segura.</p>
+        </div>
+        <img src="/icons/chevron-right.svg" alt="ícono ir a la página">
+      </div>
+    </article>
+    <article class="card-favorite">
+      <div class="violet">
+        <div class="container-text">
+          <h2>Canales</h2>
+          <p class="body2">Accede a nuestros servicios bancarios de manera.</p>
+        </div>
+        <img src="/icons/chevron-right.svg" alt="ícono ir a la página">
+      </div>
+    </article>
+    <article class="card-favorite">
+      <div class="blue">
+        <div class="container-text">
+          <h2>Créditos</h2>
+          <p class="body2">Encuentra la Financiación que Necesitas para Crecer.</p>
+        </div>
+        <img src="/icons/chevron-right.svg" alt="ícono ir a la página">
+      </div>
+    </article>
+  </section>
+
+  <section id="finance">
+    <div class="container-text">
+      <h1>¿Quieres conocer más sobre cómo financiar tu dinero?</h1>
+      <p class="body1">¡Explora nuestro informativo y obtén semanalmente los mejores consejos por expertos!</p>
+      <a href="" class="btn">¡Ir a mis logros!</a>
+    </div>
+    <img src="/images/moneda-w.webp" alt="moneda W">
+  </section>
+
+  <section id="featured-articles">
+    <h3>Artículos destacados para ti</h3>
+    <div class="container-articles">
+      <article class="each-article">
+        <card-article image="/images/carousel-article1-mobile.webp"
+          description="miniatura del video, click para reproducirlo" title="Gastos emocionales"
+          text="Implementar algunas acciones sencillas para reconocer el gasto emocional puede ayudar a que sea más fácil ajustarte a tu presupuesto."
+          btn="Ver más videos"></card-article>
+      </article>
+      <article class="each-article">
+        <card-article image="/images/carousel-article2-mobile.webp"
+          description="miniatura del artículo, click para abrirlo" title="Ponle alas a tu negocio"
+          text="Hace algunos años escuchábamos hablar del correo de brujas, o sabíamos de la vecina azafata que en sus viajes traía per..."
+          btn="Ver más artículos"></card-article>
+      </article>
+      <article class="each-article">
+        <card-article image="/images/carousel-article3-mobile.webp"
+          description="miniatura del documento, click para abrirlo" title="Finanzas"
+          text="Si eres un empleador podrás recibir un beneficio monetario mensual" btn="Ver más documentos">
+        </card-article>
+      </article>
+    </div>
+    <div class="slider">
+      <div class="slider-track" style="cursor: grabbing; transform: translateX(-651px);">
+        <article class="each-article">
+          <card-article image="/images/carousel-article1-mobile.webp"
+            description="miniatura del video, click para reproducirlo" title="Gastos emocionales"
+            text="Implementar algunas acciones sencillas para reconocer el gasto emocional puede ayudar a que sea más fácil ajustarte a tu presupuesto."
+            btn="Ver más videos"></card-article>
+        </article>
+        <article class="each-article">
+          <card-article image="/images/carousel-article2-mobile.webp"
+            description="miniatura del artículo, click para abrirlo" title="Ponle alas a tu negocio"
+            text="Hace algunos años escuchábamos hablar del correo de brujas, o sabíamos de la vecina azafata que en sus viajes traía per..."
+            btn="Ver más artículos"></card-article>
+        </article>
+        <article class="each-article">
+          <card-article image="/images/carousel-article3-mobile.webp"
+            description="miniatura del documento, click para abrirlo" title="Finanzas"
+            text="Si eres un empleador podrás recibir un beneficio monetario mensual" btn="Ver más documentos">
+          </card-article>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="profile-w">
+    <h3>Mi perfil W</h3>
+    <article class="benefits">
+      <section class="description">
+        <img src="/images/woman-perfil.webp" alt="">
+        <div class="description_info">
+          <div class="description_info_text">
+            <h4>Perfil W</h4>
+            <p class="body3">Crea tu cuenta y accede a todos sus beneficios</p>
+          </div>
+          <a href="" class="btn">Acceder a perfil</a>
+        </div>
+      </section>
+      <section class="cards-container">
+        <div class="each-card">
+          <card-icon image="/icons/bag-money-orange.svg" description="ícono de productos del banco W"
+            title="Tus productos en el mismo lugar" text="Ahora podrás revisar tus saldos, giros internacionales y mucho más en un sólo click
+          "></card-icon>
+        </div>
+        <div class="each-card">
+          <card-icon image="/icons/comment-info-orange.svg" description="ícono de información"
+            title="Revisa tu información financiera" text="Revisa el estado de tus cuentas, ahorros y productos, en cualquier lugar y cuando quieras
+          ">
+          </card-icon>
+        </div>
+        <div class="each-card">
+          <card-icon image="/icons/calendar-points-orange.svg" description="ícono de calendario"
+            title="Tu agenda personalizada" text="Ten una agenda organizada que te permita llevar el orden de tus cuentas, pagos y citas
+            "></card-icon>
+        </div>
+        <div class="each-card">
+          <card-icon image="/icons/files-landscapes-orange.svg" description="ícono de documentos"
+            title="Genera y conoce tus extractos" text="Conoce y descarga tus extractos bancarios cuando los necesites
+            y al alcance de tu mano"></card-icon>
+        </div>
+
+      </section>
+
+    </article>
+
+  </section>
+
+  <section id="profile-w-desk">
+    <h3>Conoce los beneficios de tener tu perfil W</h3>
+    <article class="benefits">
+      <img src="/images/woman-profile-desk.webp" alt="">
+      <a href="" class="btn">Accede a perfil</a>
+      <div class="benefits_container-info">
+        <section class="description">
+          <h4>Perfil W</h4>
+          <p class="body2">Crea tu cuenta y se un cliente W, así podrás acceder a todos los beneficios que tenemos para
+            tí</p>
+        </section>
+        <section class="cards-container">
+          <div class="each-card">
+            <card-icon image="/icons/bag-money-orange.svg" description="ícono de productos del banco W"
+              title="Tus productos en el mismo lugar" text="Ahora podrás revisar tus saldos, giros internacionales y mucho más en un sólo click
+            "></card-icon>
+          </div>
+          <div class="each-card">
+            <card-icon image="/icons/comment-info-orange.svg" description="ícono de información"
+              title="Revisa tu información financiera" text="Revisa el estado de tus cuentas, ahorros y productos, en cualquier lugar y cuando quieras
+            ">
+            </card-icon>
+          </div>
+          <div class="each-card">
+            <card-icon image="/icons/calendar-points-orange.svg" description="ícono de calendario"
+              title="Tu agenda personalizada" text="Ten una agenda organizada que te permita llevar el orden de tus cuentas, pagos y citas
+              "></card-icon>
+          </div>
+          <div class="each-card">
+            <card-icon image="/icons/files-landscapes-orange.svg" description="ícono de documentos"
+              title="Genera y conoce tus extractos" text="Conoce y descarga tus extractos bancarios cuando los necesites
+              y al alcance de tu mano"></card-icon>
+          </div>
+
+        </section>
+      </div>
+
+    </article>
+
+  </section>
+
+  <help-button></help-button>
+  <inclusive-button style="display: none;" disabled="true"></inclusive-button>
+
+  <custom-footer></custom-footer>
+
+  <!--Js Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+  </script>
+
+  <script type="module" src="./main.js"></script>
+  <script type="module" src="./components/components.js"></script>
+  <script type="module" src="./components/botón-ayuda/ayuda.js"></script>
+  <script type="module" src="./components/botón-inclusivo/inclusivo.js"></script>
+</body>
+
+</html>

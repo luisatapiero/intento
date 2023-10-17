@@ -1,0 +1,244 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+@import "../../global.scss";
+
+#show-help-btn {
+    display: none;
+}
+
+.help-button {
+    position: fixed;
+    bottom: 60px;
+    right: 50px;
+}
+
+.help-options div a {
+    display: block;
+    text-decoration: none;
+    background: white;
+    width: 61px;
+    height: 61px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 500ms ease;
+}
+
+#pqrs {
+    position: absolute;
+    bottom: -40px;
+    right: 130px;
+}
+
+#pqrs span{
+    margin-left: 10px;
+    position: absolute;
+    right: 80px;
+    bottom: 15px;
+    width: 80px;
+    opacity: 0;
+    padding: 5px 20px;
+    color: white;
+    transition: opacity 0.3s;
+    border-radius: 20px;
+    background-color: $orange-400;
+}
+
+#pqrs a img:hover + .pqrs-span{
+    background-color: $orange-400;
+    opacity: 1;
+}
+
+#show-help-btn:checked~ .show-btn span {
+    opacity: 0;
+}
+
+#tutorial {
+    position: absolute;
+    bottom: 40px;
+    right: 130px;
+}
+
+#tutorial span{
+    margin-left: 10px;
+    position: absolute;
+    right: 80px;
+    bottom: 15px;
+    width: 110px;
+    opacity: 0;
+    padding: 5px 20px;
+    color: white;
+    transition: opacity 0.3s;
+    border-radius: 20px;
+    background-color: $orange-400;
+}
+
+#asesoria {
+    position: absolute;
+    bottom: 110px;
+    right: 70px;
+}
+
+#asesoria span{
+    margin-left: 10px;
+    position: absolute;
+    right: 80px;
+    bottom: 15px;
+    width: 110px;
+    opacity: 0;
+    padding: 5px 20px;
+    color: white;
+    transition: opacity 0.3s;
+    border-radius: 20px;
+    background-color: $orange-400;
+}
+
+#chat {
+    position: absolute;
+    bottom: 115px;
+    right: -20px;
+}
+#chat span{
+    margin-left: 10px;
+    position: absolute;
+    right: 30px;
+    bottom: 70px;
+    width: 70px;
+    opacity: 0;
+    padding: 5px 20px;
+    color: white;
+    transition: opacity 0.3s;
+    border-radius: 20px;
+    background-color: $orange-400;
+}
+
+#show-help-btn:checked~ .help-options div span {
+    opacity: 1;
+}
+
+.show-help-btn img{
+    background-color: $orange-400;
+    width: 97px;
+    height: 97px;
+    line-height: 55px;
+    padding: 20px 14px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.help-options div a:hover {
+    background-color: $orange-100;
+
+}
+
+.help-options div a {
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+}
+
+#show-help-btn:checked~ .help-options div a {
+    opacity: 1;
+    visibility: visible;
+}
+
+.help-label-hidden {
+    margin-left: 10px;
+    position: absolute;
+    right: 80px;
+    bottom: 30px;
+    width: 160px;
+    opacity: 0;
+    padding: 5px 20px;
+    color: white;
+    transition: opacity 0.3s;
+    border-radius: 20px;
+}
+
+.show-help-button:hover + .help-label-hidden {
+    background-color: $orange-400;
+    opacity: 1;
+}
+
+#show-help-btn:checked~ .show-help-btn span {
+    opacity: 0;
+}
+
+#overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1020px) {
+    #pqrs {
+        position: inherit;
+    }
+
+    #pqrs span{
+        bottom: 80px;
+        right: 80px;
+        background-color: transparent;
+    }
+
+    #tutorial {
+        position: inherit;
+    }
+
+    #tutorial span {
+        bottom: 145px;
+        right: 80px;
+        background-color: transparent;
+    }
+
+    #asesoria {
+        position: inherit;
+    }
+
+    #asesoria span {
+        bottom: 205px;
+        right: 80px;
+        background-color: transparent;
+    }
+
+    #chat {
+        position: inherit;
+    }
+    #chat span {
+        bottom: 265px;
+        right: 85px;
+        background-color: transparent;
+    }
+
+    .help-options {
+        background-color: white;
+        width:75px;
+        border-radius: 50px;
+        padding: 10px 7px 70px 7px;
+        opacity: 0;
+    }
+
+    .help-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .show-help-btn {
+        position: absolute;
+        bottom: -40px;
+    }
+
+    #show-help-btn:checked~ .help-options {
+        opacity: 1;
+    }
+}
+
